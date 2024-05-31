@@ -15,6 +15,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
         {!isLoggedIn && <Link to="/register">Register</Link>}
         {isLoggedIn && <Link to="/add-project">Add Project</Link>}
         {isLoggedIn && <button onClick={handleLogout}>Logout</button>}
+        
       </div>
     </nav>
   );
