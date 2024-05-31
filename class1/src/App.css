@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.App {
+  text-align: center;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('/image1.jpg'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #901a0a;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #000000; /* Border for navbar icons */
+  border-radius: 5px;
+  font-weight: 700; /* Bold text */
+}
+
+.navbar button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  border: 2px solid rgb(0, 0, 0); /* Border for button */
+  color: #282c34;
+  cursor: pointer;
+  font-weight: 700; /* Bold text */
+}
+
+.login-container, .register-container, .add-project-container, .home-container, .contact-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  background-color: rgb(118, 21, 21);
+  color: #000; /* Make text color black for readability */
+  font-weight: 700; /* Bold text */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea, button {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #000000;
+  border: none;
+  color: rgb(118, 21, 21);
+  cursor: pointer;
+  font-weight: 700; /* Bold text */
+}
+
+.popup {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #4caf50;
+  color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+.footer {
+  background-color: #901a0a;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  text-align: center;
+  font-weight: 700; /* Bold text */
+}
