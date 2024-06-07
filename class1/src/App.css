@@ -1,61 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-
-.App {
-  text-align: center;
-  background-color: #000000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image: url('/image1.jpg'); /* Path to your image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-family: 'Roboto', sans-serif;
-  color: #000000;
+.underline-animation {
+  position: relative;
 }
 
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  background-color: #901a0a;
-  padding: 1rem;
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 0;
+  height: 2px; /* Adjust the height of the underline */
+  background-color: currentColor;
+  transition: width 0.3s ease-in-out;
 }
 
-.nav-links {
-  display: flex;
-  gap: 1rem;
+.underline-animation:hover::after {
+  width: 100%;
 }
 
-.navbar a {
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: 2px solid #000000; /* Border for navbar icons */
-  border-radius: 5px;
-  font-weight: 700; /* Bold text */
+.logo{
+  @apply flex items-center pl-10;
 }
 
-.navbar button {
-  margin-left: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #000000;
-  border: 2px solid rgb(0, 0, 0); /* Border for button */
-  color: #282c34;
-  cursor: pointer;
-  font-weight: 700; /* Bold text */
+.nav-div{
+  @apply flex justify-between bg-custom-black-1 font-bold font-heading1 p-2 shadow-intense z-50 border-b-2 border-custom-black-1;
 }
 
-.login-container, .register-container, .add-project-container, .home-container, .contact-container {
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border: 1px solid #000000;
-  border-radius: 8px;
-  background-color: rgb(118, 21, 21);
-  color: #000; /* Make text color black for readability */
-  font-weight: 700; /* Bold text */
+.line-effect{
+  @apply absolute -bottom-1 left-0 w-0 transition-all duration-300 h-0.5 bg-blue-600 group-hover:w-full;
 }
 
 form {
@@ -86,9 +62,5 @@ button {
 }
 
 .footer {
-  background-color: #901a0a;
-  color: rgb(0, 0, 0);
-  padding: 1rem;
-  text-align: center;
-  font-weight: 700; /* Bold text */
+  @apply flex bg-custom-black-1 p-2 text-blue-600 h-20 items-center justify-center justify-items-center;
 }

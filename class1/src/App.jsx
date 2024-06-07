@@ -14,7 +14,7 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
+      <div className="text-center bg-custom-black-2 min-h-screen flex flex-col justify-between bg-cover bg-center bg-no-repeat font-roboto text-black">
         <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
         <Routes>
           <Route path="/" element={<Home />} />
