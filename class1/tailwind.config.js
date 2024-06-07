@@ -15,11 +15,13 @@ export default {
     },
     extend: {fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],
-      'heading1': ['Fraunces', 'serif']
+      'heading1': ['Fraunces', 'serif'],
+      'oswald': ['Oswald','sans-serif']
     },
     colors: {
       'custom-black-1': '#000000',
       'custom-black-2': '',
+      'a':'#008170'
     }},
   },
   plugins: [],

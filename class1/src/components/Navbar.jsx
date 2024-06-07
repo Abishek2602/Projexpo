@@ -13,7 +13,7 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
           <img src="/logo.png" alt="Logo" className="h-70 w-20 mr-4" />
         </Link>
       </div>
-      <div className="flex gap-8 text-blue-600 text-sm">
+      <div className="flex gap-8 text-a text-sm">
         <Link to="/" className='py-2 px-4 group relative w-max'><span>Home</span>
       <span className="line-effect"></span></Link>
         <Link to="/contact" className='py-2 px-4 group relative w-max'><span>Contact</span>

@@ -41,8 +41,8 @@ const Carousel = () => {
         >
           <div className="absolute inset-0 flex items-center gap-5 justify-center bg-black bg-opacity-50 rounded-xl">
             <div className="text-center text-white px-4 md:px-8 flex-row">
-              <div><h1 className="text-3xl md:text-4xl lg:text-5xl mb-4 font-bold px-12 py-8 font-heading1">{slide.title}</h1></div>
-              <div className='justify-center px-36 -py-8'><p className="mb-12 opacity-80 w-80 font-heading1">{slide.text}</p></div>
+              <div><h1 className="text-3xl md:text-4xl lg:text-5xl mb-4 font-bold px-12 py-8 font-oswald">{slide.title}</h1></div>
+              <div className='justify-center px-36 -py-8'><p className="mb-12 opacity-80 w-80 font-oswald">{slide.text}</p></div>
             </div>
           </div>
         </div>
