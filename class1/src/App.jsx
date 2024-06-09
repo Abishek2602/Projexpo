@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import AddProject from './components/AddProject';
+import YourProjects from './components/YourProjects';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -21,7 +22,10 @@ function App() {
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/register" element={<Register />} />
           <Route path="/add-project" element={isLoggedIn ? <AddProject /> : <Login setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="/" element={<AddProject />} />
+          <Route path="/your-projects" element={<YourProjects />} />
           <Route path="/contact" element={<Contact />} />
+
         </Routes>
         <Footer />
       </div>

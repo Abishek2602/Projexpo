@@ -1,0 +1,50 @@
+.add-project-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .add-project-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-project-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-project-container input,
+  .add-project-container textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .add-project-container button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-project-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .popup {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
