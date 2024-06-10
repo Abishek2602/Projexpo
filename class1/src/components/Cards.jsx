@@ -15,7 +15,7 @@ function Cards() {
         </div>
       </a>
       <a href="#" className="card">
-        <img className="card-image" src="/siva1.png" alt="Sivasurya" />
+        <img className="card-image" src="/siva1.JPG" alt="Sivasurya" />
         <div className="card-content">
           <h5 className="card-title">Sivasurya</h5>
           <h2 className="card-subtitle">Chief Technology Officer</h2>
