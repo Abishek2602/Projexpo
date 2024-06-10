@@ -62,5 +62,5 @@ button {
 }
 
 .footer {
-  @apply flex bg-custom-black-1 p-2 text-blue-600 h-20 items-center justify-center justify-items-center;
+  @apply bg-custom-black-1 p-2 flex flex-col text-blue-600 h-20 items-center justify-center justify-items-center;
 }
