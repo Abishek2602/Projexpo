@@ -1,0 +1,50 @@
+/* styles/Carousel.css */
+
+.carousel-container {
+    @apply relative w-full max-w-4xl mx-auto h-96;
+  }
+  
+  .carousel-inner {
+    @apply relative overflow-hidden rounded-extra-lg h-full mx-auto shadow-intense shadow-custom-black-1;
+  }
+  
+  .carousel-slide {
+    @apply absolute inset-0 transition-opacity duration-1000 ease-in-out;
+  }
+  
+  .carousel-active-slide {
+    @apply opacity-100;
+  }
+  
+  .carousel-inactive-slide {
+    @apply opacity-0;
+  }
+  
+  .carousel-content {
+    @apply absolute inset-0 flex items-center gap-5 justify-center bg-black bg-opacity-50 rounded-extra-lg;
+  }
+  
+  .carousel-text {
+    @apply text-center text-white px-4 md:px-8 flex-row;
+  }
+  
+  .carousel-title {
+    @apply text-3xl md:text-4xl lg:text-5xl mb-4 font-bold px-12 py-8 font-oswald;
+  }
+  
+  .carousel-description {
+    @apply mb-12 opacity-80 w-80 font-oswald justify-center;
+  }
+  
+  .carousel-button {
+    @apply absolute top-1/2 transform -translate-y-1/2 bg-transparent text-white p-2;
+  }
+  
+  .carousel-button-left {
+    @apply left-2;
+  }
+  
+  .carousel-button-right {
+    @apply right-2;
+  }
+  

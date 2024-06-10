@@ -1,0 +1,38 @@
+/* styles/Contact.css */
+
+.contact-section {
+    @apply  bg-gray-900 font-oswald;
+  }
+  
+  .contact-container {
+    @apply py-8 lg:py-16 px-4 mx-auto max-w-screen-md;
+  }
+  
+  .contact-title {
+    @apply mb-4 text-4xl tracking-tight font-extrabold text-center text-white;
+  }
+  
+  .contact-description {
+    @apply mb-8 lg:mb-16 font-light text-center  text-gray-400 sm:text-xl;
+  }
+  
+  .contact-form {
+    @apply space-y-8;
+  }
+  
+  .contact-label {
+    @apply block mb-2 text-sm font-medium  text-gray-300;
+  }
+  
+  .contact-input {
+    @apply bg-gray-700 border text-sm block w-full p-2.5  border-gray-600  placeholder-gray-400  text-white;
+  }
+  
+  .contact-textarea {
+    @apply block p-2.5 w-full text-sm border  bg-gray-700  border-gray-600  placeholder-gray-400  text-white;
+  }
+  
+  .contact-button {
+    @apply py-3 rounded-extra-lg px-5 text-sm font-medium text-center text-white sm:w-fit hover:shadow-extra-intense focus:outline-none bg-blue-600;
+  }
+  

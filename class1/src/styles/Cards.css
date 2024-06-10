@@ -1,0 +1,30 @@
+/* styles/Cards.css */
+
+.card-container {
+    @apply justify-between flex flex-row;
+  }
+  
+  .card {
+    @apply flex flex-col items-center gap-5 bg-white border border-gray-200 rounded-extra-lg md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700;
+  }
+  
+  .card-image {
+    @apply object-cover w-full rounded-l-extra-lg h-full md:h-auto md:w-48;
+  }
+  
+  .card-content {
+    @apply flex flex-col justify-between p-4 leading-normal font-oswald;
+  }
+  
+  .card-title {
+    @apply mb-2 text-2xl font-bold tracking-tight text-white;
+  }
+  
+  .card-subtitle {
+    @apply mb-2 text-lg font-bold tracking-tight text-gray-300;
+  }
+  
+  .card-text {
+    @apply mb-3 font-normal text-gray-700 dark:text-gray-400;
+  }
+  

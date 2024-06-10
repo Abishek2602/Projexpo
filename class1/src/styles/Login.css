@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.login-container {
+    @apply flex items-center justify-center h-screen w-full px-5 sm:px-0 bg-gray-900;
+  }
+  
+  .login-card {
+    @apply flex font-oswald bg-opacity-80 shadow-intense overflow-hidden max-w-sm lg:max-w-4xl w-full rounded-extra-lg;
+  }
+  
+  .login-image {
+    @apply hidden md:block lg:w-1/2 bg-cover bg-blue-700;
+  }
+  
+  .login-form {
+    @apply w-full p-8 lg:w-1/2;
+  }
+  
+  .login-title {
+    @apply text-xl text-gray-600 text-center;
+  }
+  
+  .login-group {
+    @apply mt-4 flex flex-col justify-between;
+  }
+  
+  .login-label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+  }
+  
+  .login-input {
+    @apply text-gray-700 border rounded-extra-lg border-blue-600 py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700;
+  }
+  
+  .login-input-password {
+    @apply text-gray-700 border rounded-extra-lg border-gray-300 py-2 px-4 block w-full focus:outline-2 focus:outline-blue-700;
+  }
+  
+  .login-button {
+    @apply mt-8 rounded-extra-lg bg-blue-700 text-white font-bold py-2 px-4 w-full hover:bg-blue-600;
+  }
+  
+  .login-google {
+    @apply flex items-center justify-center mt-4 text-white rounded-extra-lg hover:shadow-intense hover:shadow-black;
+  }
+  
+  .login-google-content {
+    @apply flex px-5 justify-center w-full py-3 border rounded-extra-lg;
+  }
+  
+  .login-google-icon {
+    @apply min-w-[30px];
+  }
+  
+  .login-google-text {
+    @apply whitespace-nowrap text-gray-600 font-bold;
+  }
+
+  .login-forgot-password {
+    @apply text-xs text-gray-500 hover:text-gray-900 text-end w-full mt-2;
+  }
+
+  .login-signup {
+    @apply mt-4 flex items-center w-full text-center text-xs text-gray-500 capitalize;
+  }
+  
+  .login-signup-link {
+    @apply text-blue-700;
+  }
+  

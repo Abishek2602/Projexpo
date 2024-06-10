@@ -1,0 +1,46 @@
+/* styles/Home.css */
+
+/* Custom styles using Tailwind CSS */
+.home-container {
+    @apply bg-gray-900 min-h-screen flex flex-col items-center justify-center py-28;
+  }
+  
+  .home-intro {
+    @apply flex gap-14 w-full justify-start items-center py-4;
+  }
+  
+  .home-text-container {
+    @apply px-24 w-4/5;
+  }
+  
+  .home-title {
+    @apply mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl;
+  }
+  
+  .home-highlight {
+    @apply text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400;
+  }
+  
+  .home-description {
+    @apply text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400;
+  }
+  
+  .home-image-container {
+    @apply px-16;
+  }
+  
+  .home-image {
+    @apply rounded-super-lg shadow-intense h-full w-full;
+  }
+  
+  .home-carousel {
+    @apply w-full py-28;
+  }
+  
+  .home-cards {
+    @apply w-full mt-8 px-16 py-8;
+  }
+  
+  .home-pricing {
+    @apply w-full mt-8 px-16 py-8;
+  }
