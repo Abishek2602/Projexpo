@@ -11,7 +11,8 @@ export default {
     },
     borderRadius: {
       'extra-lg': '2rem',  
-      'super-lg': '3rem',  
+      'super-lg': '3rem',
+      'full' : '12rem'  
     },
     extend: {fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],

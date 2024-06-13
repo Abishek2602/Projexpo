@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Landing from './components/Landing';
 import './App.css';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
           <Route path="/" element={<AddProject />} />
           <Route path="/your-projects" element={<YourProjects />} />
           <Route path="/contact" element={<Contact />} />
-
+          <Route path="/landing" element={<Landing />} />
         </Routes>
         <Footer />
       </div>

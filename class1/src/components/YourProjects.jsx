@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './YourProjects.css';
+import AOS from 'aos';
+import '../styles/YourProjects.css';
 
 const YourProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -14,15 +15,20 @@ const YourProjects = () => {
         console.error('Error fetching projects:', error);
       }
     };
-
     fetchProjects();
+  }, []);
+
+  useEffect(() => {
+    AOS.init({ duration: 800 });
   }, []);
 
   return (
     <div className="your-projects-container">
-      <h2>Your Projects</h2>
+      <h1 className="project-title">
+            <span className="project-highlight">Your </span>Projects
+          </h1>
       {projects.map((project) => (
-        <div key={project._id} className="project-item">
+        <div key={project._id} className="project-item" data-aos='zoom-in-up'>
           <h3>{project.title}</h3>
           <p>{project.description}</p>
           <a href={project.link} target="_blank" rel="noopener noreferrer">
