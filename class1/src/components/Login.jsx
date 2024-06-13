@@ -25,7 +25,7 @@ const Login = ({ setIsLoggedIn }) => {
       if (response.ok) {
         toast.success('Successfully logged in!');
         setIsLoggedIn(true);
-        navigate('/Home'); // Navigate to a dashboard or home page after successful login
+        navigate('/landing'); // Navigate to a dashboard or home page after successful login
       } else {
         toast.error(data.message || 'Login failed. Please try again.');
       }

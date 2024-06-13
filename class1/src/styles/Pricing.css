@@ -1,0 +1,74 @@
+/* Pricing component styles */
+
+.up-container{
+    @apply flex flex-col justify-center gap-24;
+}
+
+.home-title {
+    @apply mb-4 text-3xl font-extrabold justify-center px-40 text-gray-900 dark:text-white md:text-5xl lg:text-6xl;
+  }
+
+.down-container{
+    @apply flex flex-row gap-10;
+}
+
+.pricing-container {
+    @apply w-full max-w-sm p-4 bg-white rounded-extra-lg sm:p-8 shadow-extra-intense;
+  }
+
+  .pricing-center-container {
+    @apply w-full max-w-sm p-4 bg-gray-900 shadow-extra-intense rounded-extra-lg sm:p-8;
+  }
+  
+  .pricing-header {
+    @apply mb-4 text-xl font-medium text-gray-500 ;
+  }
+  
+  .pricing-price-container {
+    @apply flex items-baseline text-gray-900;
+  }
+  
+  .pricing-dollar-sign {
+    @apply text-3xl font-oswald;
+  }
+  
+  .pricing-price {
+    @apply text-5xl font-extrabold tracking-tight;
+  }
+  
+  .pricing-price-period {
+    @apply ms-1 text-xl font-normal text-gray-500;
+  }
+  
+  .pricing-list {
+    @apply space-y-5 my-7;
+  }
+  
+  .pricing-list-item {
+    @apply flex items-center;
+  }
+  
+  .pricing-list-item-line-through {
+    @apply flex line-through decoration-gray-500;
+  }
+  
+  .pricing-list-icon {
+    @apply flex-shrink-0 w-4 h-4 text-blue-700;
+  }
+  
+  .pricing-list-icon-disabled {
+    @apply flex-shrink-0 w-4 h-4 text-gray-400;
+  }
+  
+  .pricing-list-text {
+    @apply text-base font-normal leading-tight text-gray-500 ms-3;
+  }
+  
+  .pricing-list-text-disabled {
+    @apply text-base font-normal leading-tight text-gray-500 ms-3;
+  }
+  
+  .pricing-button {
+    @apply text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-extra-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center;
+  }
+  
