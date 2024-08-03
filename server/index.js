@@ -1,68 +1,3 @@
-/*const express=require("express");
-const app=express();
-const mongoose=require('mongoose')
-const RegisterModel = require('./models/Register')
-mongoose.connect("mongodb+srv://siva:siva123@projexpo.gz5mtuu.mongodb.net/User?retryWrites=true&w=majority&appName=ProjExpo",{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-app.get("/getRegister", (req,res) => {
-    RegisterModel.find({}, (err,result)=>{
-        if(err){
-            res.json(err);
-        } else{
-            res.json(result);
-        }
-    });
-
-});
-
-app.listen(3001,() => {
-    console.log("SERVER runs");
-});
-const express = require("express");
-const app = express();
-const cors=require("cors");
-app.use(express.json());  // Middleware to parse JSON
-app.use(cors());
-const mongoose = require('mongoose');
-const RegisterModel = require('./models/Register');
-
-
-mongoose.connect("mongodb+srv://siva:siva123@projexpo.gz5mtuu.mongodb.net/User?retryWrites=true&w=majority&appName=ProjExpo", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-app.get("/getRegister", async (req, res) => {
-    try {
-        const result = await RegisterModel.find({});
-        res.json(result);
-    } catch (err) {
-        res.json(err);
-    }
-});
-
-app.post("/createUser", async (req, res) => {
-        const { username, emailid, password} = req.body;
-        const user = await RegisterModel.findOne({ username });
-        if (user) {
-          return res.json({ message: "user already exists" });
-        }
-        const newUser = await RegisterModel.create({
-          username,
-          emailid,
-          password
-        });
-        res.status(200).json({ message: "User created" });
-      }
-);
-
-app.listen(3001, () => {
-    console.log("SERVER runs");
-});
-*/
 const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
@@ -130,10 +65,10 @@ app.post("/login", async (req, res) => {
 });
 
 app.post('/addProject', async (req, res) => {
-    const { title, description, link } = req.body;
+    const { title, selectedOption, description, link } = req.body;
   
     try {
-      const newProject = new ProjectModel({ title, description, link });
+      const newProject = new ProjectModel({ title, selectedOption, description, link });
       await newProject.save();
       res.status(201).json({ message: 'Project added successfully' });
     } catch (error) {

@@ -1,0 +1,39 @@
+.add-project-section {
+    @apply bg-gray-900 font-oswald;
+}
+
+.add-project-container {
+    @apply py-8 lg:py-16 px-4 mx-auto max-w-screen-md;
+}
+
+.add-project-title {
+    @apply mb-4 text-4xl tracking-tight font-extrabold text-center text-white;
+}
+
+.add-project-form {
+    @apply space-y-8;
+}
+
+.add-project-label {
+    @apply block mb-2 text-sm font-medium text-gray-300;
+}
+
+.add-project-input {
+    @apply bg-gray-700 border text-sm block w-full p-2.5 border-gray-600 placeholder-gray-400 text-white;
+}
+
+.add-project-textarea {
+    @apply block p-2.5 w-full text-sm border bg-gray-700 border-gray-600 placeholder-gray-400 text-white;
+}
+
+.add-project-button {
+    @apply py-3 rounded-extra-lg px-5 text-sm font-medium text-center text-white sm:w-fit hover:shadow-extra-intense focus:outline-none bg-blue-600 mt-4;
+}
+
+.view-projects-button {
+    @apply py-3 rounded-extra-lg px-5 text-sm font-medium text-center text-white sm:w-fit hover:shadow-extra-intense focus:outline-none bg-blue-600 mt-4;
+}
+
+.popup {
+    @apply fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-green-500 text-white py-3 px-6 rounded-extra-lg shadow-extra-intense;
+}

@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <div className='home-intro' data-aos='fade-down'>
+      <div className='home-intro' data-aos='zoom-in-up'>
         <div className='home-text-container'>
           <h1 className="home-title">
             <span className="home-highlight">ProjExpo</span>Store your Project
@@ -27,13 +27,13 @@ const Home = () => {
           <img src="/repo1.png" alt="repo" className='home-image' />
         </div>
       </div>
-      <div className="home-carousel" data-aos="fade-up"> 
+      <div className="home-carousel" data-aos="zoom-in-up"> 
         <Carousel />
       </div>
-      <div className="home-pricing" data-aos='fade-up'>
+      <div className="home-pricing" data-aos='zoom-in-up'>
         <Pricing/>
       </div>
-      <div className="home-cards" data-aos="fade-up">
+      <div className="home-cards" data-aos="zoom-in-up">
         <Cards />
       </div>
     </div>
